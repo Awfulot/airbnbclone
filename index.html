@@ -7,39 +7,50 @@
 </head>
 <body class="bg-black text-white">
   <!-- navbar -->
-    <div class="flex justify-between items-center p-5 border-2 border-white" >
-        <div class="grow border-white border-2">airbnb</div>
-        <div class="basis-30 grow-0 border-white border-2">Places to stay</div>
-        <div class="basis-10 grow-0 border-white border-2">Experiences</div>
-        <div class="basis-30 grow-0 border-white border-2">Online Experiences</div>
-        <div class="grow border-white border-2 text-right">Become a host</div>
+    <div class="flex justify-between items-center" >
+      <img class="h-10" src="https://i.postimg.cc/7ZPPnf74/airbnbicon.png"alt="logo">
+        <div class="grow font-bold text-xl"><a href="">airbnb</a></div>
+        <div class="basis-30 grow-0 p-2"><a href="">Places to stay</a></div>
+        <div class="basis-10 grow-0 p-2"><a href="">Experiences</a></div>
+        <div class="basis-30 grow-0 p-2"><a href="">Online Experiences</a></div>
+        <div class="grow text-right"><a href="">Become a host</a></div>
     </div>
     <!--input table-->
-    <div class="flex justify-center items-center p-10">
-      <table class="p-3 rounded-full text-black bg-white text-left">
-        <tr>
-            <th class="pl-5">Location</th>
-            <th class="pl-5">Check in</th>
-            <th class="pl-5">Check out</th>
-            <th class="pl-5">Guests</th>
-        </tr>
-        <tr>
-            <td class="px-5 text-left">Where are you going</td>
-            <td class="px-5 text-left">Add dates</td>
-            <td class="px-5 text-left">Add dates</td>
-            <td class="px-5 text-left">Add guests</td>
-        </tr>
+    <div class="flex justify-center items-center pb-16 p-3 text-black">
       
-
-
-      </table>
+          <form class="grid grid-cols-4 border-2 rounded-full p-3 h-20 bg-white">
+            
+            <div><label for="where">Location</label></div>
+          
+            <div><label for="checkout">Check out</label></div>
+            
+       
+        
+            <div><label for="checkin">Check in</label></div>
+            <div><label class="w-20" for="guest">Guests</label><img class="float-right h-10" src="airbnbicon.png" alt="icon"></div>
+        
+        
+            <div><input class="rounded-full" type="text" id="where" name="where" placeholder="Where are you going"></div>
+            <div><input type="text" id="checkout" name="checkout" placeholder="Add dates"></div>
+        
+        
+            
+            <div><input type="text" id="checkin" name="checkin" placeholder="Add dates"></div>
+            <div><input class="w-20" type="text" id="guest" name="guest" placeholder="Add guests"></div>
+            
+            
+          </form>
+         
+        
+      
+     
     </div>
     
     
     
     
     <!--Body-->
-    <div class="flex flex-col justify-center items-center h-80 pt-1 bg-red-500">
+    <div class="flex flex-col justify-center items-center h-80 p-5 bg-red-500">
         <h1 class="text-white text-3xl p-5">Help house 100,000 refugees fleeing Ukraine</h1>
         <div>
           <button class="border-2 rounded-lg p-2">Learn More</button>
